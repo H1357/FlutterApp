@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "67562788390",
+    "project_id": "dapp-b1315",
+    "storage_bucket": "dapp-b1315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67562788390:android:e8657a3d9dcc6cff0138e7",
+        "android_client_info": {
+          "package_name": "com.example.mydapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67562788390-ankq7i9q6rasaor8hdn1jn643a5vluru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALIGq3z2FgS8pNoLHhr2w97HE_myDihpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67562788390-ankq7i9q6rasaor8hdn1jn643a5vluru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
