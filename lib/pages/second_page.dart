@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class SecondScreen extends StatefulWidget {
+  const SecondScreen({Key? key}) : super(key: key);
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<SecondScreen> createState() => _SecondScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _SecondScreenState extends State<SecondScreen> {
 
   void _menuOpen(){ // main menu
     Navigator.of(context).push(

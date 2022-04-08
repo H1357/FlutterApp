@@ -186,13 +186,15 @@ class _ListInClassState extends State<ListInClass> {
                     title:  Text(listIn[index]),
                   trailing: IconButton(
                     icon: Icon(
-                      Icons.delete_sweep,
+                      Icons.accessibility_sharp,
                       color: Colors.deepPurpleAccent
                     ),
                     onPressed: () {
-                      setState(() {
-                        listIn.removeAt(index);
-                      });
+                      Navigator.pop(context);
+                      Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
+                      //setState(() {
+                      //  listIn.removeAt(index);
+                      //});
                     },
                   ),
                   )
@@ -204,6 +206,7 @@ class _ListInClassState extends State<ListInClass> {
             },
             );
           }),
+      /*
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.black,
         onPressed: (){
@@ -233,6 +236,8 @@ class _ListInClassState extends State<ListInClass> {
           color: Colors.greenAccent
         ),
       ),
+      */
+
     );
   }
 }

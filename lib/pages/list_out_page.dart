@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:mydapp/pages/menu_page.dart'; //how to do this work?
 
 
 
@@ -209,10 +210,13 @@ class _ListOutClassState extends State<ListOutClass> {
                     title:  Text(listIn[index]),
                   trailing: IconButton(
                     icon: Icon(
-                      Icons.delete_sweep,
+                        Icons.accessibility_sharp,
+                     // Icons.delete_sweep,
                       color: Colors.deepPurpleAccent
                     ),
                     onPressed: () {
+                      Navigator.pop(context);
+                      Navigator.pushNamedAndRemoveUntil(context, '/', (route) => false);
                       setState(() {
                         listIn.removeAt(index);
                       });
